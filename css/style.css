@@ -13,10 +13,18 @@
     font-family: 'Advent Pro', sans-serif;
 }
 
+/* Background */
+
 .background {
     background: url(../img/background.svg) no-repeat;
     background-size:cover;
     background-attachment: scroll;
     
     
+}
+
+/* Global */
+
+li {
+    list-style-type:none;
 }
