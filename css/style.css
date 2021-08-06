@@ -1,3 +1,11 @@
+header {
+    border:1px solid red;
+}
+
+#banner {
+    height:50vw;
+}
+
 /* Fonts used */
 
 .gotu {
