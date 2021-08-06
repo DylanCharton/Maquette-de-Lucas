@@ -12,3 +12,11 @@
 .advent {
     font-family: 'Advent Pro', sans-serif;
 }
+
+.background {
+    background: url(../img/background.svg) no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    
+    
+}
