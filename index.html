@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&family=Allerta+Stencil&family=Gotu&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
     <!-- SEO -->
     <title>La Tour de Pize</title>
     <meta name="description" content="Venez déguster des pizzas, burgers, sandwich faits maison dans notre établissement de restauration rapide">
@@ -53,27 +54,27 @@
     </header>
     <main>
         <!-- SECTION OF THE INTRO, FACEBOOK LOGO AND ADRESS -->
-        <section>
+        <section class="text-center">
             
-                <p class="text-center advent black" id="intro">Nous sommes un restaurant rapide situé dans la zone commerciale de Choisey, nous avons une salle intérieure, une terrasse et une aire de jeux pour enfants.<br/>
+                <p class="advent black" id="intro">Nous sommes un restaurant rapide situé dans la zone commerciale de Choisey, nous avons une salle intérieure, une terrasse et une aire de jeux pour enfants.<br/>
                     Nous vous proposons des pizzas, des burgers, des tacos, des paninis et des salades. Nous fabriquons notre pâte à pizza, nos pains burgers et nos pains  kebab. Tous nos desserts sont réalisés par nos soins.
                 </p>
             
             <!-- FACEBOOK LOGO -->
-            <div>
-
+            <div class="mt-4">
+                <a href="https://www.facebook.com"><img src="img/facebook.png" alt="Logo de Facebook"> </a>
             </div>
             <!-- ADRESS AND PHONE NUMBER BUTTON -->
-            <div>
-
-            </div>
+                <p class="text-center advent black mt-5" id="adress">SALAMANDRE PIZZ <br/>1 RUE DU FOURNEY <br/>39100 <br/>CHOISEY</p>                           
+                 <button type="button" class="allerta black" id="phonenumber"><span class="iconify" data-icon="fluent:call-16-filled" style="color: #1d1d1d;" data-width="50"></span><a href="tel:0384827725">03 84 82 77 25</a></button>
+            
         </section>
         <!-- MAP AND SCHEDULE -->
         <section>
             <!-- MAP -->
-            <div class="d-none">
-                <button class="go" type="button">Y aller</button>
-                <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=5.4527726769447336%2C47.066573943616845%2C5.456313192844391%2C47.068185317044176&amp;layer=mapnik&amp;marker=47.067379636419545%2C5.454542934894562" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=47.06738&amp;mlon=5.45454#map=19/47.06738/5.45454">Afficher la carte plus grande</a></small>
+            <div class="text-center mt-5">
+                <button class="black advent mb-4" type="button" id="go"><span class="iconify-inline" data-icon="ci:location" style="color: #1d1d1d;"></span>Y ALLER</button>
+                <iframe width="390" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" class="map" src="https://www.openstreetmap.org/export/embed.html?bbox=5.4527726769447336%2C47.066573943616845%2C5.456313192844391%2C47.068185317044176&amp;layer=mapnik&amp;marker=47.067379636419545%2C5.454542934894562" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=47.06738&amp;mlon=5.45454#map=19/47.06738/5.45454">Afficher la carte plus grande</a></small>
             </div>
             <!-- SCHEDULE -->
             <div class="col-12 col-md-4 col-lg-4 col-xl-4">
@@ -230,7 +231,6 @@
             </div>
 
             <div class="checkout">
-                <button class="btn btn-danger" type="button">COMMANDER</button>
                 <div>
                     <ul>
                         <li>Menu Burger<br/><span>Burger Classique - Mayonnaise - Coca-Cola 33cl - Fondant au Chocolat</span></li>

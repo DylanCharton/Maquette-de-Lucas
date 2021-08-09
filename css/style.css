@@ -1,13 +1,13 @@
 
 
 /* CLARITY */
-/* header {
+ header {
     border:1px solid red;
 }
 
 div {
     border: 1px solid red;
-} */
+} 
 
 /* BANNER */
 #banner {
@@ -37,6 +37,31 @@ div {
     word-spacing: 6px;
 }
 
+#adress{
+    font-size:26px;
+    letter-spacing:3px;
+    word-spacing:6px;
+}
+
+#phonenumber{
+    font-size:35px;
+    background-color:#618c03;
+    border-radius:10px;
+    border:0px;
+    filter:drop-shadow(0px 2px 3px #1d1d1d)
+}
+
+/* MAP */
+.map {
+    border : solid 4px #618c03!important;
+}
+#go{
+    background-color:#f2b705;
+    border-radius:10px;
+    border:0px;
+    filter:drop-shadow(0px 2px 3px #1d1d1d);
+    font-size:35px;
+}
 /* MAIN PROPERTIES */
 .black {
     color: #1d1d1d;
