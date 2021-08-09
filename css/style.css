@@ -1,9 +1,45 @@
-header {
+
+
+/* CLARITY */
+/* header {
     border:1px solid red;
 }
 
+div {
+    border: 1px solid red;
+} */
+
+/* BANNER */
 #banner {
-    height:50vw;
+    height:50%;
+}
+
+.btn-success{
+    background-color: #618c03;
+    padding: 1.5vh;
+    margin-bottom:10%;
+    width:150px;
+    border-radius:10px;
+    font-size: 20px;
+    
+}
+
+.arrowup{
+    position:fixed;
+    top:85%;
+    left:80%;
+}
+
+/* INTRO */
+#intro{
+    font-size:22px;
+    letter-spacing:3px;
+    word-spacing: 6px;
+}
+
+/* MAIN PROPERTIES */
+.black {
+    color: #1d1d1d;
 }
 
 /* Fonts used */

@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet">
+    
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,12 +21,28 @@
 <body class="background">
     <!-- HEADER FOR THE LOGO AND THE NAV -->
     <header class="container-fluid" id="banner">
-        <div class="row justify-content-center">
-            <div class="col-3 align-items-center">
-                <img src="img/logo.svg" alt="Logo de La Tour de Pize" class="img-fluid">
+        
+            <div class="col-12 d-flex justify-content-center">
+                <img src="img/logo.svg" alt="Logo de La Tour de Pize" class="img-fluid" id="logo">
             </div>
-        </div>
+            <div class="row ">
+                <div class="col-12 justify-content-center d-flex">
+                    <button type="button" class="btn btn-success me-4 allerta black" id="contact">CONTACT</button>
+                  <button type="button" class="btn btn-success allerta black" id="ordergreen">COMMANDER</button>
+                </div>
+            </div>           
+            <div class="row pt-3">
+                <div class="col-12 justify-content-center d-flex">
+                    <button type="button" class="btn btn-success me-4 allerta black" id="schedule">HORAIRES</button>
+                
+                
+                    <button type="button" class="btn btn-success allerta black" id="findus">LOCALISER</button>
+                </div>
+            </div>           
         <nav>
+            <div class="arrowup">
+                <a href="#logo"><img src="img/arrow.png" alt="Flèche pour remonter à l'accueil" class="img-fluid"></a>
+            </div>
 
         </nav>
        
@@ -37,11 +54,11 @@
     <main>
         <!-- SECTION OF THE INTRO, FACEBOOK LOGO AND ADRESS -->
         <section>
-            <div class="col-12">
-                <p>Nous sommes un restaurant rapide situé dans la zone commerciale de Choisey, nous avons une salle intérieure, une terrasse et une aire de jeux pour enfants.
+            
+                <p class="text-center advent black" id="intro">Nous sommes un restaurant rapide situé dans la zone commerciale de Choisey, nous avons une salle intérieure, une terrasse et une aire de jeux pour enfants.<br/>
                     Nous vous proposons des pizzas, des burgers, des tacos, des paninis et des salades. Nous fabriquons notre pâte à pizza, nos pains burgers et nos pains  kebab. Tous nos desserts sont réalisés par nos soins.
                 </p>
-            </div>
+            
             <!-- FACEBOOK LOGO -->
             <div>
 
@@ -213,7 +230,7 @@
             </div>
 
             <div class="checkout">
-                <button class="order-btn" type="button"></button>
+                <button class="btn btn-danger" type="button">COMMANDER</button>
                 <div>
                     <ul>
                         <li>Menu Burger<br/><span>Burger Classique - Mayonnaise - Coca-Cola 33cl - Fondant au Chocolat</span></li>
@@ -223,7 +240,7 @@
                     </ul>
                     <p>TOTAL</p>
                 </div>
-                <button class="order-btn" type="button"></button>
+                <button class="btn btn-danger" type="button">COMMANDER</button>
             </div>     
         </section>
         <!-- CONTACT FORM -->
@@ -239,13 +256,15 @@
         
     </main>
 
-    <footer>
-Notre page FACEBOOK
-Salamandre Pizz 1 rue du Fourney 39100 Choisey
-Crédits logo : Alain Merucci and Co.
-Crédit photos : Unsplash
-An original design by Lucas M-R. 
-<a href="#">Mentions légales</a>
+    <footer class="row d-flex justify-content-center">
+        <div class="col-8 d-flex">
+            Notre page FACEBOOK<br/>
+            Salamandre Pizz 1 rue du Fourney 39100 Choisey<br/>
+            Crédits logo : Alain Merucci and Co. <br/>
+            Crédit photos : Unsplash<br/>
+            An original design by Lucas M-R. <br/>
+            <a href="#">Mentions légales</a>
+        </div>
     </footer>
   
 </body>
