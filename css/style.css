@@ -1,20 +1,20 @@
 
 
-/* CLARITY
+ CLARITY
  header {
     border:1px solid red;
 }
 
 div {
     border: 1px solid red;
-}  */
+}  
 
 /* BANNER */
 #banner {
     height:50%;
 }
 
-.btn-success{
+.mobilenav{
     background-color: #618c03;
     padding: 1.5vh;
     margin-bottom:10%;
@@ -108,17 +108,16 @@ div {
       color: #1d1d1d;
       background-color: #01f0;
       border:0;
+      border-radius: 0;
+}
+.transparent:hover{
+    background-color:#ffcf40;
+    
 }
 .yellow {
     color:#D97904;
 }
-.menubtn {
-    border-radius:0;
-}
 
-.menubtn:active{
-    background-color: #f2b705;
-}
 .btn-check:active+.btn-secondary, .btn-check:checked+.btn-secondary, .btn-secondary.active, .btn-secondary:active, .show>.btn-secondary.dropdown-toggle{
     background-color:#f2b705;
     color : #1d1d1d;
@@ -161,6 +160,10 @@ ul > li:active{
     font-size:36px;
 }
 
+#price {
+    font-size:24px;
+}
+
 /* FORM */
 .send{
     font-size:35px;
@@ -192,6 +195,15 @@ textarea {
 
 .white{
     color: #FFFFFF
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
+a:hover{
+    color:inherit;
 }
 
 /* Fonts used */
@@ -230,4 +242,5 @@ textarea {
 
 li {
     list-style-type:none;
+    
 }
