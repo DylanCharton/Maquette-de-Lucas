@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&family=Allerta+Stencil&family=Gotu&display=swap" rel="stylesheet">
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <script src="js/script.js"></script>
     <!-- SEO -->
     <title>La Tour de Pize</title>
     <meta name="description" content="Venez déguster des pizzas, burgers, sandwich faits maison dans notre établissement de restauration rapide">
@@ -26,31 +27,27 @@
             <div class="col-12 d-flex justify-content-center">
                 <img src="img/logo.svg" alt="Logo de La Tour de Pize" class="img-fluid" id="logo">
             </div>
-            <div class="row ">
+            <div class="row d-flex d-xs-block d-md-block d-lg-none d-xl-none">
                 <div class="col-12 justify-content-center d-flex">
                     <button type="button" class="btn btn-success me-4 allerta black" id="contact">CONTACT</button>
                   <button type="button" class="btn btn-success allerta black" id="ordergreen">COMMANDER</button>
                 </div>
             </div>           
-            <div class="row pt-3">
+            <div class="row pt-3 d-flex d-xs-block d-md-block d-lg-none d-xl-none">
                 <div class="col-12 justify-content-center d-flex">
                     <button type="button" class="btn btn-success me-4 allerta black" id="schedule">HORAIRES</button>
                 
                 
                     <button type="button" class="btn btn-success allerta black" id="findus">LOCALISER</button>
                 </div>
-            </div>           
+            </div>
+<!-- ARROW TO SCROLL TO THE TOP -->
         <nav>
             <div class="arrowup">
                 <a href="#logo"><img src="img/arrow.png" alt="Flèche pour remonter à l'accueil" class="img-fluid"></a>
             </div>
-
         </nav>
-       
-        <!-- ARROW TO SCROLL TO THE TOP -->
-        <div>
-
-        </div>   
+          
     </header>
     <main>
         <!-- SECTION OF THE INTRO, FACEBOOK LOGO AND ADRESS -->
@@ -65,24 +62,25 @@
                 <a href="https://www.facebook.com"><img src="img/facebook.png" alt="Logo de Facebook"> </a>
             </div>
             <!-- ADRESS AND PHONE NUMBER BUTTON -->
-                <p class="text-center advent black mt-5" id="adress">SALAMANDRE PIZZ <br/>1 RUE DU FOURNEY <br/>39100 <br/>CHOISEY</p>                           
-                 <button type="button" class="allerta black" id="phonenumber"><span class="iconify" data-icon="fluent:call-16-filled" style="color: #1d1d1d;" data-width="50"></span><a href="tel:0384827725">03 84 82 77 25</a></button>
-            
+            <div class="row d-xs-block d-md-block d-lg-none d-xl-none">
+                    <p class="text-center advent black mt-5" id="adress">SALAMANDRE PIZZ <br/>1 RUE DU FOURNEY <br/>39100 <br/>CHOISEY</p>                           
+                    <button type="button" class="allerta black" id="phonenumber"><span class="iconify" data-icon="fluent:call-16-filled" style="color: #1d1d1d;" data-width="50"></span><a href="tel:0384827725">03 84 82 77 25</a></button>
+            </div>
         </section>
         <!-- MAP AND SCHEDULE -->
         <section>
             <!-- MAP -->
-            <div class="text-center mt-5">
+            <div class="text-center mt-5 d-xs-block d-md-block d-lg-none d-xl-none">
                 <button class="black advent mb-4" type="button" id="go"><span class="iconify-inline" data-icon="ci:location" style="color: #1d1d1d;"></span>Y ALLER</button>
                 <iframe width="390" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" class="map" src="https://www.openstreetmap.org/export/embed.html?bbox=5.4527726769447336%2C47.066573943616845%2C5.456313192844391%2C47.068185317044176&amp;layer=mapnik&amp;marker=47.067379636419545%2C5.454542934894562" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=47.06738&amp;mlon=5.45454#map=19/47.06738/5.45454">Afficher la carte plus grande</a></small>
             </div>
             <!-- SCHEDULE -->
-            <div class="col-12 col-md-4 col-lg-4 col-xl-4">
-                <h1>HORAIRES</h1>
-                <table class="table table-hover">
+            <div class="col-12 col-md-4 col-lg-4 col-xl-4 d-xs-block d-md-block d-lg-none d-xl-none">
+                <h1 class="text-center gotu white p-2" id="scheduletitle">HORAIRES</h1>
+                <table class="table table-hover gotu" id="schedulemobile">
                     <tr>
                         <td>LUNDI</td>
-                        <td>FERMÉ</td>
+                        <td id="closed">FERMÉ</td>
 
                     </tr>
                     <tr>
@@ -112,7 +110,7 @@
                     </tr>
                     <tr>
                         <td>DIMANCHE</td>
-                        <td>18H 21H30</td>
+                        <td><span class="yellow">18H</span> - 21H30</td>
 
                     </tr>
 
@@ -122,60 +120,53 @@
         <!-- ORDER MENU -->
         <section>
             <!-- STICKY TOP NAVBAR TO SELECT THE TYPE OF MEAL -->
-            <div>
-                <div class="navbar">
-                    <ul>
-                        <li>VOIR TOUT</li>
-                        <li>MENUS</li>
-                        <li>SALADES</li>
-                        <li>SALADE REPAS</li>
-                        <li>ASSIETTE</li>
-                        <li>PIZZAS</li>
-                        <li>KEBAB</li>
-                        <li>TACOS</li>
-                        <li>BURGERS</li>
-                        <li>AMERICAINS</li>
-                        <li>PANINIS</li>
-                        <li>WRAPS & BAGNATS</li>
-                        <li>PETITES FAIMS</li>
-                        <li>DESSERTS MAISON</li>
-                        <li>BOISSONS</li>
-                        <li>BOISSONS ALCOOLISÉES</li>
-                    </ul>
-                </div>
+            
+                <h2 class="row menutitle justify-content-center gotu white p-2 mb-3">MENU</h2>
+                <form class="d-flex flex-nowrap overflow-auto" id="wrapMenu" role="group">
+                    
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"  checked>
+                    <label class="btn btn-secondary transparent" for="btnradio1">voir tout</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-secondary transparent" for="btnradio2">menus</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-secondary transparent" for="btnradio3">salades</label>
+    
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                    <label class="btn btn-secondary transparent" for="btnradio4">pizzas</label>
+    
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+                    <label class="btn btn-secondary transparent" for="btnradio5">burgers</label>
+    
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off">
+                    <label class="btn btn-secondary transparent" for="btnradio6">americains</label>
+    
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio7" autocomplete="off">
+                    <label class="btn btn-secondary transparent" for="btnradio7">paninis</label>
+    
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio8" autocomplete="off">
+                    <label class="btn btn-secondary transparent" for="btnradio8">wraps & bagants</label>
+    
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio9" autocomplete="off">
+                    <label class="btn btn-secondary transparent" for="btnradio9">petites faims</label>
+    
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio10" autocomplete="off">
+                    <label class="btn btn-secondary transparent" for="btnradio10">desserts maisons</label>
+    
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio11" autocomplete="off">
+                    <label class="btn btn-secondary transparent" for="btnradio11">boissons</label>
+    
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio12" autocomplete="off">
+                    <label class="btn btn-secondary transparent" for="btnradio12">boissons alcoolisées</label>
+    
+                </form>
+                
 
-            </div>
+           
             <!-- EVERY MENU THAT WILL APPEAR AND DISAPPEAR ACCORDING TO THE USER'S INTERACTION-->
-            <div class="seeall">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-            <div class="menus">
-                <ul>
-                    <li>Menu Enfant <br/><span class="description">Plat, boisson, dessert, bonbons</span></li>
-                    <li>Menu Assiette <br/><span class="description">Assiette au choix, boisson, dessert</span></li>
-                    <li>Menu Salade <br/><span class="description">Salade, boisson, dessert</span></li>
-                    <li>Menu Burger <br/><span class="description">Burger, frites, boisson, dessert</span></li>
-                    <li>Menu Tacos <br/><span class="description">Tacos, frites, boisson, dessert</span></li>
-                    <li>Menu Kebab <br/><span class="description">Kebab, frites, boisson, dessert</span></li>
-                    <li>Menu Panini <br/><span class="description">Panini, frites, boisson, dessert</span></li>
-                    <li>Menu Wrap ou Bagnat <br/><span class="description">Wrap ou Bagnat, frites, boisson, dessert</span></li>                                     
-                </ul>
-            </div>
+           
+            
             <div class="burgers d-none">
                 <ul>
                     <li>Burger Classique <br/><span class="description">Pain maison, sauce au choix, steak 150g, cheddar, tomate, salade, cornichon</span></li>
@@ -231,26 +222,33 @@
             </div>
 
             <div class="checkout">
-                <div>
+                <div class="row text-center">
+                    <h1 class="checkoutitle gotu white pt-2">PANIER</h1>
+                </div>
+                <div class="d-none">
                     <ul>
                         <li>Menu Burger<br/><span>Burger Classique - Mayonnaise - Coca-Cola 33cl - Fondant au Chocolat</span></li>
                         <li>Menu Burger<br/><span>Burger Classique - Mayonnaise - Coca-Cola 33cl - Fondant au Chocolat</span></li>
                         <li>Menu Burger<br/><span>Burger Classique - Mayonnaise - Coca-Cola 33cl - Fondant au Chocolat</span></li>
                         <li>Menu Burger<br/><span>Burger Classique - Mayonnaise - Coca-Cola 33cl - Fondant au Chocolat</span></li>
                     </ul>
-                    <p>TOTAL</p>
+                    
                 </div>
-                <button class="btn btn-danger" type="button">COMMANDER</button>
+            </div>
+            <div class="text-center">
+                <button type="button" class="btnorder p-2 gotu black mt-3">COMMANDER</button>
             </div>     
         </section>
         <!-- CONTACT FORM -->
-        <section>
-            <h2>Nous contacter</h2>
-            <form action="" method="post" class="contact-form">
-                <input type="text" name="name" id="name" placeholder="Votre nom" required>
-                <input type="email" name="mail" id="mail" placeholder="Votre adresse mail" required>
-                <textarea name="content" id="content" placeholder="Votre message..." required></textarea>
-                <button class="send" type="button">ENVOYER</button>
+        <section class="text-center contact">
+            <h2 class="mb-4">Nous contacter</h2>
+            <form action="" method="post" class="contact-form ">
+                
+                    <input type="text" name="name" id="name" placeholder="Votre nom" required size="45"  class="d-block m-auto mb-3 field">
+                    <input type="email" name="mail" id="mail" placeholder="Votre adresse mail" required size="45" class="d-block m-auto mb-3 field">
+                    <textarea name="content" id="content" placeholder="Votre message..." required rows="10" cols="50" class="d-block m-auto"></textarea>
+                    <button class="send mt-3 mb-5" type="button">ENVOYER</button>
+                
             </form>
         </section>
         
