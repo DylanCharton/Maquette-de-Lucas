@@ -19,7 +19,7 @@ div {
 }
 
 .adressdesktop{
-    font-size:25px;
+    font-size:24px;
 }
 .banner {
     height:70vh;
@@ -56,6 +56,9 @@ div {
     font-size:25px;
 }
 
+.buttonadressdesktop{
+    margin-bottom: 300px;
+}
 /* INTRO */
 #intro{
     font-size:22px;
@@ -77,6 +80,14 @@ div {
     filter:drop-shadow(0px 2px 3px #1d1d1d);
     width: 350px;
     margin:auto;
+}
+
+.introdesktop {
+    font-size:24px;
+    letter-spacing:3px;
+    word-spacing: 6px;
+    line-height: 60px;
+    margin-bottom: 900px;
 }
 
 /* MAP */
@@ -102,7 +113,20 @@ div {
 #closed{
     color:#D97704;
 }
-
+.line {
+    border:1px solid grey; 
+    max-width: 500px;
+    margin-bottom:10px;
+    margin-inline: 20px;
+}
+.days { 
+    width: 50%;
+    padding-left: 10px;
+ }
+.time { 
+    width: 50%;
+    text-align: center;
+}
 /* MENU */
 
 /* Hide scrollbar for Chrome, Safari and Opera */
