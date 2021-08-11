@@ -75,7 +75,7 @@
         <!-- SECTION OF THE INTRO, FACEBOOK LOGO (mobile only) AND ADRESS -->
         <section>
             <!-- DESKTOP -->
-            <div class="row align-items-end buttonadressdesktop">   
+            <div class="row align-items-end">   
                 <div class="orderbtndesktop d-none d-md-none d-lg-inline-block d-xl-inline-block">
                     <a href="#"><img src="img/starbutton.svg" class="img-fluid"></a> 
                 </div>
@@ -83,28 +83,11 @@
                     <p class="text-center advent black mt-5 adressdesktop">SALAMANDRE PIZZ <br/>1 RUE DU FOURNEY <br/>39100 <br/>CHOISEY</p>
                 </div>
             </div>    
-            <div class="row justify-content-end advent black introdesktop">
-                <div class="col-8 text-center">Nous sommes un restaurant rapide situé dans la zone commerciale de Choisey, nous avons une salle intérieure, une terrasse et une aire de jeux pour enfants.<br/>
-                    Nous vous proposons des pizzas, des burgers, des tacos, des paninis et des salades. Nous fabriquons notre pâte à pizza, nos pains burgers et nos pains  kebab. Tous nos desserts sont réalisés par nos soins.</div>
-            </div>
-
-            <article id="scheduledesktop">
-                <div>
-                    <div class="d-flex line"><div class="days">lundi</div><div class="time"><span style="color:#D97904;">fermé</span></div></div>
-                    <div class="d-flex line"><div class="days">mardi</div><div class="time">10h00 21h30</div></div>
-                    <div class="d-flex line"><div class="days">mercredi</div><div class="time">10h00 21h30</div></div>
-                    <div class="d-flex line"><div class="days">jeudi</div><div class="time">10h00 21h30</div></div>
-                    <div class="d-flex line"><div class="days">vendredi</div><div class="time">10h00 21h30</div></div>
-                    <div class="d-flex line"><div class="days">samedi</div><div class="time">10h00 21h30</div></div>
-                    <div class="d-flex line"><div class="days">dimanche</div><div class="time"><span style="color:#D97904;">18h00</span> 21h30</div></div>
-                    
-                </div>
-            </article>
-                
+            
                 <!-- MOBILE  -->
-                <p class="advent black text-center d-block d-md-block d-lg-none d-xl-none" id="intro">Nous sommes un restaurant rapide situé dans la zone commerciale de Choisey, nous avons une salle intérieure, une terrasse et une aire de jeux pour enfants.<br/>
-                    Nous vous proposons des pizzas, des burgers, des tacos, des paninis et des salades. Nous fabriquons notre pâte à pizza, nos pains burgers et nos pains  kebab. Tous nos desserts sont réalisés par nos soins.
-                </p>
+                <div class="advent black text-center" id="intro"><p class="introparagraph">Nous sommes un restaurant rapide situé dans la zone commerciale de Choisey, nous avons une salle intérieure, une terrasse et une aire de jeux pour enfants.<br/>
+                    Nous vous proposons des pizzas, des burgers, des tacos, des paninis et des salades. Nous fabriquons notre pâte à pizza, nos pains burgers et nos pains  kebab. Tous nos desserts sont réalisés par nos soins.</p>
+                </div>
             
             <!-- FACEBOOK LOGO -->
             <div class="mt-4 d-lg-none d-xl-none d-xxl-none text-center">
@@ -117,52 +100,70 @@
             </div>
         </section>
         <!-- MAP AND SCHEDULE -->
+            <!-- SCHEDULE DESKTOP -->
+        <article id="scheduledesktop" class="d-none d-md-none d-lg-block ms-5">
+            <div>
+                <div class="d-flex line"><div class="days">LUNDI</div><div class="time"><span style="color:#D97904;">fermé</span></div></div>
+                <div class="d-flex line"><div class="days">MARDI</div><div class="time">10H00 21H30</div></div>
+                <div class="d-flex line"><div class="days">MERCREDI</div><div class="time">10H00 21H30</div></div>
+                <div class="d-flex line"><div class="days">JEUDI</div><div class="time">10H00 21H30</div></div>
+                <div class="d-flex line"><div class="days">VENDREDI</div><div class="time">10H00 21H30</div></div>
+                <div class="d-flex line"><div class="days">SAMEDI</div><div class="time">10H00 21H30</div></div>
+                <div class="d-flex line"><div class="days">DIMANCHE</div><div class="time"><span style="color:#D97904;">18H00</span> 21H30</div></div>
+                
+            </div>
+        </article>
+        <article class="d-none d-md-none d-lg-block d-xl-block">
+            
+                <svg width=0 height=0>
+                    <defs>
+                    <clipPath id="decoupage">
+                    <circle cx="300" cy="300" r="300" />
+                    </clipPath>
+                    </defs>
+                </svg>
+                <iframe width="600" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" class="mapdesktop" src="https://www.openstreetmap.org/export/embed.html?bbox=5.4527726769447336%2C47.066573943616845%2C5.456313192844391%2C47.068185317044176&amp;layer=mapnik&amp;marker=47.067379636419545%2C5.454542934894562"></iframe>
+            
+            
+        </article>
         <section>
-            <!-- MAP -->
+            <!-- MAP MOBILE -->
             <div class="text-center mt-5 d-xs-block d-md-block d-lg-none d-xl-none">
                 <button class="black advent mb-4" type="button" id="go"><span class="iconify-inline" data-icon="ci:location" style="color: #1d1d1d;"></span>Y ALLER</button>
                 <iframe width="390" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" class="map" src="https://www.openstreetmap.org/export/embed.html?bbox=5.4527726769447336%2C47.066573943616845%2C5.456313192844391%2C47.068185317044176&amp;layer=mapnik&amp;marker=47.067379636419545%2C5.454542934894562" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=47.06738&amp;mlon=5.45454#map=19/47.06738/5.45454">Afficher la carte plus grande</a></small>
             </div>
-            <!-- SCHEDULE -->
+            <!-- SCHEDULE MOBILE -->
             <div class="col-12 col-md-4 col-lg-4 col-xl-4 d-xs-block d-md-block d-lg-none d-xl-none">
                 <h1 class="text-center gotu white p-2" id="scheduletitle">HORAIRES</h1>
                 <table class="table table-hover gotu" id="schedulemobile">
                     <tr>
                         <td>LUNDI</td>
                         <td id="closed">FERMÉ</td>
-
                     </tr>
                     <tr>
                         <td>MARDI</td>
                         <td>10H - 21H30</td>
-
                     </tr>
                     <tr>
                         <td>MERCREDI</td>
                         <td>10H - 21H30</td>
-
                     </tr>
                     <tr>
                         <td>JEUDI</td>
                         <td>10H - 21H30</td>
-
                     </tr>
                     <tr>
                         <td>VENDREDI</td>
                         <td>10H - 21H30</td>
-
                     </tr>
                     <tr>
                         <td>SAMEDI</td>
                         <td>10H - 21H30</td>
-
                     </tr>
                     <tr>
                         <td>DIMANCHE</td>
                         <td><span class="yellow">18H</span> - 21H30</td>
-
                     </tr>
-
                 </table>
             </div>
         </section>
@@ -314,7 +315,7 @@
                     <input type="text" name="name" id="name" placeholder="Votre nom" required size="45"  class="d-block m-auto mb-3 field">
                     <input type="email" name="mail" id="mail" placeholder="Votre adresse mail" required size="45" class="d-block m-auto mb-3 field">
                     <textarea name="content" id="content" placeholder="Votre message..." required rows="10" cols="50" class="d-block m-auto"></textarea>
-                    <button class="send mt-3 mb-5 px-5 py-2" type="button">ENVOYER</button>
+                    <button class="send mt-3 mb-5 px-5 py-2" type="submit">ENVOYER</button>
                 
             </form>
         </section>
