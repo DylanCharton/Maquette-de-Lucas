@@ -1,8 +1,0 @@
-@mixin .greentop {
-    font-family:'Allerta Stencil';
-    color : black;
-}
-
-.btn-success {
-    @include greentop;
-}

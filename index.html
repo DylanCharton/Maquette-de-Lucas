@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&family=Allerta+Stencil&family=Gotu&display=swap" rel="stylesheet">
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
-    <script src="js/script.js"></script>
+    
     <!-- SEO -->
     <title>La Tour de Pize</title>
     <meta name="description" content="Venez déguster des pizzas, burgers, sandwich faits maison dans notre établissement de restauration rapide">
@@ -22,17 +22,39 @@
 
 <body class="background">
     <!-- HEADER FOR THE LOGO AND THE NAV -->
-    <header class="container-fluid" id="banner">
-        
-            <div class="col-12 d-flex justify-content-center">
-                <img src="img/logo.svg" alt="Logo de La Tour de Pize" class="img-fluid" id="logo">
+    <header class="container-fluid" >
+        <div class="row justify-content-evenly banner">   
+            <div class="col-1 mt-5 navdesktop d-none d-md-none d-lg-block d-xl-block">
+                <a href="#scheduletitle">HORAIRES</a>
             </div>
-            <div class="row d-flex d-xs-block d-md-block d-lg-none d-xl-none">
+            <div class="col-1 mt-5 navdesktop d-none d-md-none d-lg-block d-xl-block">
+                <a href="#ordersection">MENU</a>
+                <div class="row align-items-center numberdtp">
+                    <a href="https://facebook.com"><img src="img/facebook.png" alt="Logo Facebook" class="img-fluid"></a>
+                </div>
+            </div>
+        
+            <div class="col-12 col-md-4 col-lg-4 col-xl-4 d-flex flex-column justify-content-center">               
+                <img src="img/logo.svg" alt="Logo de La Tour de Pize" class="img-fluid" id="logo">
+                    <div class="subtitledtp text-center d-none d-md-none d-lg-block d-xl-block">SNACK SUR PLACE ET à EMPORTER</div>            
+            </div>
+            <div class="col-2 mt-5 navdesktop black d-none d-md-none d-lg-block d-xl-block">
+                <a href="#go">NOUS TROUVER</a>
+                <div class="row align-items-center numberdtp advent">
+                    03 84 82 77 25
+                </div>
+            </div>
+        </div>   
+            
+            
+            
+            <div class="row d-flex d-block d-md-block d-lg-none d-xl-none">
                 <div class="col-12 justify-content-center d-flex">
                     <button type="button" class="btn btn-success me-4 allerta black mobilenav" id="contact"><a href="#contactus">CONTACT</a></button>
                   <button type="button" class="btn btn-success allerta black mobilenav" id="ordergreen"><a href="#ordersection">COMMANDER</a></button>
                 </div>
-            </div>           
+            </div>     
+
             <div class="row pt-3 d-flex d-xs-block d-md-block d-lg-none d-xl-none">
                 <div class="col-12 justify-content-center d-flex">
                     <button type="button" class="btn btn-success me-4 allerta black mobilenav" id="schedule"><a href="#scheduletitle">HORAIRES</a></button>
@@ -50,15 +72,25 @@
           
     </header>
     <main>
-        <!-- SECTION OF THE INTRO, FACEBOOK LOGO AND ADRESS -->
-        <section class="text-center">
-            
-                <p class="advent black" id="intro">Nous sommes un restaurant rapide situé dans la zone commerciale de Choisey, nous avons une salle intérieure, une terrasse et une aire de jeux pour enfants.<br/>
+        <!-- SECTION OF THE INTRO, FACEBOOK LOGO (mobile only) AND ADRESS -->
+        <section>
+            <!-- DESKTOP -->
+            <div>   
+                <div class="orderbtndesktop d-none d-md-none d-lg-inline-block d-xl-inline-block">
+                    <a href="#"><img src="img/starbutton.svg" class="img-fluid"></a> 
+                </div>
+                <div class="col-4 d-flex d-none d-md-none d-lg-inline-block d-xl-inline-block"> 
+                    <p class="text-center advent black mt-5 adressdesktop">SALAMANDRE PIZZ <br/>1 RUE DU FOURNEY <br/>39100 <br/>CHOISEY</p>
+                </div>
+            </div>    
+                
+                <!-- MOBILE  -->
+                <p class="advent black text-center" id="intro">Nous sommes un restaurant rapide situé dans la zone commerciale de Choisey, nous avons une salle intérieure, une terrasse et une aire de jeux pour enfants.<br/>
                     Nous vous proposons des pizzas, des burgers, des tacos, des paninis et des salades. Nous fabriquons notre pâte à pizza, nos pains burgers et nos pains  kebab. Tous nos desserts sont réalisés par nos soins.
                 </p>
             
             <!-- FACEBOOK LOGO -->
-            <div class="mt-4">
+            <div class="mt-4 d-lg-none d-xl-none d-xxl-none text-center">
                 <a href="https://www.facebook.com"><img src="img/facebook.png" alt="Logo de Facebook"> </a>
             </div>
             <!-- ADRESS AND PHONE NUMBER BUTTON -->
@@ -221,7 +253,7 @@
                 </ul>
             </div>
 
-            <div class="container-fluid checkout">
+            <div class="container-fluid">
                 <div class="row text-center">
                     <h1 class="checkoutitle gotu white pt-2">PANIER</h1>
                 </div>
