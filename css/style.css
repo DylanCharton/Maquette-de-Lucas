@@ -359,7 +359,7 @@ li {
         max-height:600px;
         flex-wrap:wrap
     }
-    } 
+    
 
     .checkout{
         display:flex;
@@ -377,8 +377,8 @@ li {
         margin-left: 50px;
         margin-right: 50px;
     }
-    
-}
+}  
+
 
 /* MENU DE LAURENT */
 
