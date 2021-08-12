@@ -352,7 +352,13 @@ li {
         max-width:353px;
     }
     .menulist{
-        display:flex;
+        /* display:flex; */
+        background-color:#ffffff70;
+        margin-left: 50px;
+        margin-right: 50px;
+        max-height:600px;
+        flex-wrap:wrap
+    }
     } 
 
     .checkout{
@@ -366,9 +372,17 @@ li {
         flex-wrap: wrap!important;
         overflow:initial!important;
     }
+    nav{
+        background-color:#ffffff70;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
 }
 
 /* MENU DE LAURENT */
+
+
 
 .elmenu{
     position:relative;
@@ -378,7 +392,7 @@ li {
     cursor:pointer;
     width:99%;
     margin:0;
-    
+    background-color:#ffffff70;
 }
 .left{
     flex-grow: 7;
@@ -412,4 +426,28 @@ li {
     
     
     background-color: lawngreen;
+}
+
+/* CHECKOUT */
+
+.elpanier{
+    position:relative;
+    display: flex;
+    align-items: stretch;
+    box-shadow:4px 4px 4px grey;
+    margin-inline: 15px;
+    padding:4px;
+    background-color:#ffffff70;
+}
+
+.infosElPanier{
+    flex-grow: 7;
+    margin: 10px;
+
+}
+
+.qteP{
+    text-align: center;
+    width: 40px;
+    padding:10px;
 }

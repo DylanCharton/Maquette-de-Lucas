@@ -128,7 +128,7 @@
                         </clipPath>
                         </defs>
                     </svg>
-                    <iframe width="80%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" class="mapdesktop" src="https://www.openstreetmap.org/export/embed.html?bbox=5.4527726769447336%2C47.066573943616845%2C5.456313192844391%2C47.068185317044176&amp;layer=mapnik&amp;marker=47.067379636419545%2C5.454542934894562"></iframe>
+                    <iframe width="500" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" class="mapdesktop" src="https://www.openstreetmap.org/export/embed.html?bbox=5.4527726769447336%2C47.066573943616845%2C5.456313192844391%2C47.068185317044176&amp;layer=mapnik&amp;marker=47.067379636419545%2C5.454542934894562"></iframe>
                 
                 
             </article>
@@ -136,7 +136,9 @@
                 <!-- MAP MOBILE -->
                 <div class="text-center mt-5 d-xs-block d-md-block d-lg-none d-xl-none">
                     <button class="black advent mb-4" type="button" id="go"><span class="iconify-inline" data-icon="ci:location" style="color: #1d1d1d;"></span>Y ALLER</button>
-                    <iframe width="390" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" class="map col-12" src="https://www.openstreetmap.org/export/embed.html?bbox=5.4527726769447336%2C47.066573943616845%2C5.456313192844391%2C47.068185317044176&amp;layer=mapnik&amp;marker=47.067379636419545%2C5.454542934894562" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=47.06738&amp;mlon=5.45454#map=19/47.06738/5.45454">Afficher la carte plus grande</a></small>
+                    
+                    <iframe width="90%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" class="map" src="https://www.openstreetmap.org/export/embed.html?bbox=5.4527726769447336%2C47.066573943616845%2C5.456313192844391%2C47.068185317044176&amp;layer=mapnik&amp;marker=47.067379636419545%2C5.454542934894562" style="border: 1px solid black"></iframe><br/>
+                    <small><a href="https://www.openstreetmap.org/?mlat=47.06738&amp;mlon=5.45454#map=19/47.06738/5.45454">Afficher la carte plus grande</a></small>
                 </div>
                 <!-- SCHEDULE MOBILE -->
                 <div class="col-12 col-md-12 col-lg-4 col-xl-4 d-xs-block d-md-block d-lg-none d-xl-none">
@@ -174,7 +176,7 @@
                 </div>
             </section>
             <!-- ORDER MENU -->
-            <nav id="ordersection" class="px-4">
+            <nav id="ordersection" class="px-md-4">
                 <!-- STICKY TOP NAVBAR TO SELECT THE TYPE OF MEAL -->
                     <h2 class="text-center menutitle gotu white p-2 mb-3">MENU</h2>
                     <form class="d-flex flex-nowrap overflow-auto" id="wrapMenu" role="group">
@@ -219,7 +221,7 @@
             </nav>
                     
                 <!-- element de commande -->
-            <div class="menulist"> 
+            <div class="menulist d-flex flex-column"> 
                 <div class="elmenu" >
                     <div class="left" onclick="toggleMenu(this);" >
                         <div class="infosMenu">
@@ -299,15 +301,122 @@
                         </div>
                     </div>
                 </div>
+                <div class="elmenu" >
+                    <div class="left" onclick="toggleMenu(this);" >
+                        <div class="infosMenu">
+                            <h3>Titre menu</h3>
+                            <p class="txt">Lorem ipsum dolor sit amet.<br>
+                            Sit amet consectetur adipisicing.</p>
+                        </div>
+                        <div class="price">12€</div>
+                    </div>
                 
+                    <div class="right">
+                        <div class="qte">0</div>
+                        <div class="ctrlMenu">
+                            <button class="btn btn-success" onclick=addToBasket(this);>+</button>
+                            <button class="btn btn-danger" onclick=removeFromBasket(this);>-</button>
+                        </div>
+                    </div>
+                </div><div class="elmenu" >
+                    <div class="left" onclick="toggleMenu(this);" >
+                        <div class="infosMenu">
+                            <h3>Titre menu</h3>
+                            <p class="txt">Lorem ipsum dolor sit amet.<br>
+                            Sit amet consectetur adipisicing.</p>
+                        </div>
+                        <div class="price">12€</div>
+                    </div>
+                
+                    <div class="right">
+                        <div class="qte">0</div>
+                        <div class="ctrlMenu">
+                            <button class="btn btn-success" onclick=addToBasket(this);>+</button>
+                            <button class="btn btn-danger" onclick=removeFromBasket(this);>-</button>
+                        </div>
+                    </div>
+                </div><div class="elmenu" >
+                    <div class="left" onclick="toggleMenu(this);" >
+                        <div class="infosMenu">
+                            <h3>Titre menu</h3>
+                            <p class="txt">Lorem ipsum dolor sit amet.<br>
+                            Sit amet consectetur adipisicing.</p>
+                        </div>
+                        <div class="price">12€</div>
+                    </div>
+                
+                    <div class="right">
+                        <div class="qte">0</div>
+                        <div class="ctrlMenu">
+                            <button class="btn btn-success" onclick=addToBasket(this);>+</button>
+                            <button class="btn btn-danger" onclick=removeFromBasket(this);>-</button>
+                        </div>
+                    </div>
+                </div><div class="elmenu" >
+                    <div class="left" onclick="toggleMenu(this);" >
+                        <div class="infosMenu">
+                            <h3>Titre menu</h3>
+                            <p class="txt">Lorem ipsum dolor sit amet.<br>
+                            Sit amet consectetur adipisicing.</p>
+                        </div>
+                        <div class="price">12€</div>
+                    </div>
+                
+                    <div class="right">
+                        <div class="qte">0</div>
+                        <div class="ctrlMenu">
+                            <button class="btn btn-success" onclick=addToBasket(this);>+</button>
+                            <button class="btn btn-danger" onclick=removeFromBasket(this);>-</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="wrapPanier">
                     <h2 class="checkoutitle gotu white text-center p-2">PANIER</h2>
-                    <div class="checkout col-12 col-md-4">
-                        
-                    
+                    <div class="elpanier d-flex align-items-center" >
+                        <span class="infosElPanier">Titre menu - 12€</span>
+                        <button class="btn btn-success">+</button>
+                        <span class="qteP">2</span>
+                        <button class="btn btn-danger">-</button>
+                     
+                    </div>
+    
+                    <!-- element panier -->
+                    <div class="elpanier d-flex align-items-center" >
+                        <span class="infosElPanier">Titre menu - 12€</span>
+                        <button class="btn btn-success">+</button>
+                        <span class="qteP">4</span>
+                        <button class="btn btn-danger">-</button>
+                     
+                    </div>
+    
+                    <!-- element panier -->
+                    <div class="elpanier d-flex align-items-center" >
+                        <span class="infosElPanier">Titre menu - 12€</span>
+                        <button class="btn btn-success">+</button>
+                        <span class="qteP">1</span>
+                        <button class="btn btn-danger">-</button>
+                     
+                    </div>
+    
+                    <!-- element panier -->
+                    <div class="elpanier d-flex align-items-center" >
+                        <span class="infosElPanier">Titre menu - 12€</span>
+                        <button class="btn btn-success">+</button>
+                        <span class="qteP">1</span>
+                        <button class="btn btn-danger">-</button>
+                     
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btnorder px-3 py-3 gotu black mt-3">Commander</button>
+                    </div>  
 
                 </div>
-            </div>
-            </section>  
+
+                    
+                
+            </div>  
             
                
               
@@ -319,9 +428,7 @@
         
 
                
-                <div class="text-center">
-                    <button type="button" class="btnorder px-3 py-3 gotu black mt-3">Commander</button>
-                </div>     
+                   
             
             <!-- CONTACT FORM -->
             
@@ -331,7 +438,7 @@
                     <div class="row d-flex">
                         
                         <div class="col-12 col-md-6 order-1 order-md-2">
-                            <h2 class="mb-4" >Nous contacter</h2>
+                            <h3 class="mb-4" >Nous contacter</h3>
                             <form method="" class="justify-content-center">
                                 <input type="text" name="name" id="name" placeholder="Votre nom" required   class="d-inline-block mb-3 field">
                                 <input type="email" name="mail" id="mail" placeholder="Votre adresse mail" required class="d-inline-block mb-3 field">
@@ -341,7 +448,7 @@
                                 </div>                                
                             </form> 
                         </div>
-                        <div class="col-12 col-md-6 order-2 order-md-1 advent black align-items-end d-flex flex-column">
+                        <div class="col-12 col-md-6 order-2 order-md-1 advent black align-items-end ">
                             <div><a href="https://facebook.com">Notre page Facebook</a></div>
                             <p>Salamandre Pizz 1 Rue du Fourney 39100 Choisey</p>
                             <p>Crédits logo : A.M and Cie</p>
