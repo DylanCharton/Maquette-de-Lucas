@@ -1,13 +1,13 @@
 
 
- CLARITY
+ /* CLARITY
  header {
     border:1px solid red;
 }
 
 div, form, p {
     border: 1px solid red;
-}   
+}    */
 
 
 /* BANNER */
@@ -228,6 +228,10 @@ ul > li:active{
     font-size:24px;
 }
 
+.total{
+    font-size:30px;
+}
+
 /* FORM */
 .btRed{
     font-size:35px;
@@ -349,7 +353,7 @@ li {
     }
 
     .elmenu{
-        max-width:353px;
+        max-width:400px;
     }
     .menulist{
         /* display:flex; */
@@ -393,6 +397,8 @@ li {
     width:99%;
     margin:0;
     background-color:#ffffff70;
+    padding-top: 10px;
+    padding-left:10px;
 }
 .left{
     flex-grow: 7;
@@ -438,6 +444,7 @@ li {
     margin-inline: 15px;
     padding:4px;
     background-color:#ffffff70;
+    font-size:25px;
 }
 
 .infosElPanier{
@@ -451,3 +458,67 @@ li {
     width: 40px;
     padding:10px;
 }
+
+/* IMAGES IN THE BACKGROUND */
+
+.pizzabg{
+    position:absolute;
+    top:350px;
+    right:0px;
+    z-index:-3;
+}
+.comptoir{
+    position:absolute;
+    top:800px;
+    right:100px;
+    z-index:1;
+}
+.salade{
+    position:absolute;
+    top:1200px;
+    left:0px;
+    
+}
+.saladetwo{
+    position:absolute;
+    top:1600px;
+    left:0px;
+    
+}
+.terrasse{
+    position:absolute;
+    top:1800px;
+    left:300px;
+    
+}
+.plate{
+    position:absolute;
+    top:2000px;
+    right:0px;
+    
+}
+.tomate{
+    position:absolute;
+    top:2200px;
+    left:90px;
+    
+}
+.chou{
+    position:absolute;
+    top:2700px;
+    right:0px;
+    
+}
+.hamburger{
+    position:absolute;
+    top:3050px;
+    left:0px;
+    
+}
+.laitue{
+    position:absolute;
+    top:3200px;
+    right:0px;
+    
+}
+
