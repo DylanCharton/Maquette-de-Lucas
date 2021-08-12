@@ -1,16 +1,21 @@
 
 
- /* CLARITY
+ CLARITY
  header {
     border:1px solid red;
 }
 
-div {
+div, form, p {
     border: 1px solid red;
-}    */
+}   
 
 
 /* BANNER */
+
+body {
+    margin:0;
+    padding:0;
+}
 
 .orderbtndesktop{
     
@@ -48,7 +53,9 @@ div {
 .arrowup{
     position:fixed;
     top:90%;
-    left:90%;
+    left:85%;
+    height:50px;
+    width:50px
 }
 
 .navdesktop {
@@ -150,6 +157,8 @@ div {
       font-size:24px;
   }
 
+  
+
 .transparent {
       white-space:nowrap;
       box-shadow: 0px 3px 5px #1d1d1d;
@@ -241,11 +250,11 @@ ul > li:active{
     width: 100%;
     height: 175px;
     max-width: 500px;
-  }
+}
 
-  #contactus input {
+#contactus input {
     width: 250px;
-  }
+}
 
 .field {
     height:45px;
@@ -281,7 +290,7 @@ a:hover{
     font-style: normal;
     font-weight: normal;
     src: local('Good Mood Regular'), url('Good Mood.woff') format('woff');
-    }
+}
 
 .gotu {
     font-family: 'Gotu' , sans-serif;
@@ -321,11 +330,11 @@ li {
 .mapdesktop {
     clip-path: url(#decoupage);
     margin-top:150px;   
-  }
+}
 
   #map {
     filter:drop-shadow(5px 2px 10px #1d1d1d);
-  }
+}
 
 @media screen and (min-width: 993px) {
     #intro {
@@ -335,7 +344,54 @@ li {
     }
     .introparagraph{
         width:600px;
+        margin-right:20px;
         
+    }
+
+    .elmenu{
+        max-width:353px;
+    }
+    .menulist{
+        display:flex;
     }
     
 }
+
+/* MENU DE LAURENT */
+
+.elmenu{
+    position:relative;
+    display: flex;
+    align-items: stretch;
+    box-shadow:0px 4px 4px grey; 
+    cursor:pointer;
+    width:99%;
+    margin:0;
+    
+}
+.left{
+    flex-grow: 7;
+}
+
+.infosMenu {
+    position:relative;
+    float: left;
+    /* display:inline-block; */
+    width: auto;
+}
+.price{
+    font-size: 24px;
+    padding:4px;
+}
+
+.right{
+    display:none;
+}
+.qte{
+    font-size: 36px;
+    padding:4px;
+    text-align: right;
+}
+.active {
+    background-color: #F2B70550;
+} 

@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&family=Allerta+Stencil&family=Gotu&display=swap" rel="stylesheet">
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     
     <!-- SEO -->
     <title>La Tour de Pize</title>
@@ -22,258 +23,310 @@
 
 <body class="background">
     <!-- HEADER FOR THE LOGO AND THE NAV -->
-    <header class="container-fluid" >
-        <div class="row justify-content-evenly banner">   
-            <div class="col-1 mt-5 navdesktop d-none d-md-none d-lg-block d-xl-block">
-                <a href="#scheduledesktop">HORAIRES</a>
-            </div>
-            <div class="col-1 mt-5 navdesktop d-none d-md-none d-lg-block d-xl-block">
-                <a href="#ordersection">MENU</a>
-                <div class="row align-items-center numberdtp">
-                    <a href="https://facebook.com"><img src="img/facebook.png" alt="Logo Facebook" class="img-fluid"></a>
+       
+        <header class="container-fluid" >
+            <div class="row justify-content-evenly banner">   
+                <div class="col-1 mt-5 navdesktop d-none d-md-none d-lg-block d-xl-block">
+                    <a href="#scheduledesktop">HORAIRES</a>
                 </div>
-            </div>
+                <div class="col-1 mt-5 navdesktop d-none d-md-none d-lg-block d-xl-block">
+                    <a href="#ordersection">MENU</a>
+                    <div class="d-flex align-items-center numberdtp">
+                        <a href="https://facebook.com"><img src="img/facebook.png" alt="Logo Facebook" class="img-fluid"></a>
+                    </div>
+                </div>
+            
+                <div class="col-12 col-md-4 col-lg-4 col-xl-4 d-flex flex-column justify-content-center">               
+                    <img src="img/logo.svg" alt="Logo de La Tour de Pize" class="img-fluid" id="logo">
+                        <div class="subtitledtp text-center d-none d-md-none d-lg-block d-xl-block">SNACK SUR PLACE ET à EMPORTER</div>            
+                </div>
+                <div class="col-2 mt-5 navdesktop black d-none d-md-none d-lg-block d-xl-block">
+                    <a href="#go">NOUS TROUVER</a>
+                    <div class=" d-flex align-items-center numberdtp advent">
+                        
+                        03 84 82 77 25
+                        
+                    </div>
+                </div>
+            </div>   
+                
+                
+                
+                <div class="row d-flex d-block d-md-block d-lg-none d-xl-none">
+                    <div class="col-12 justify-content-center d-flex">
+                        <button type="button" class="btn btn-success me-4 allerta black mobilenav" id="contact"><a href="#contactus">CONTACT</a></button>
+                    <button type="button" class="btn btn-success allerta black mobilenav" id="ordergreen"><a href="#ordersection">COMMANDER</a></button>
+                    </div>
+                </div>     
+
+                <div class="row pt-3 d-flex d-xs-block d-md-block d-lg-none d-xl-none">
+                    <div class="col-12 justify-content-center d-flex">
+                        <button type="button" class="btn btn-success me-4 allerta black mobilenav" id="schedule"><a href="#scheduletitle">HORAIRES</a></button>
+                    
+                    
+                        <button type="button" class="btn btn-success allerta black mobilenav" id="findus"><a href="#go">LOCALISER</a></button>
+                    </div>
+                </div>
+    <!-- ARROW TO SCROLL TO THE TOP -->
+            <nav>
+                <div class="arrowup">
+                    <a href="#logo"><img src="img/arrow.png" alt="Flèche pour remonter à l'accueil" class="img-fluid"></a>
+                </div>
+            </nav>
+            
+        </header>
+        <main class="container-fluid">
+            <!-- SECTION OF THE INTRO, FACEBOOK LOGO (mobile only) AND ADRESS -->
+            <section>
+                <!-- DESKTOP -->
+                <div class="row align-items-end">   
+                    <div class="orderbtndesktop d-none d-md-none d-lg-inline-block d-xl-inline-block">
+                        <a href="#"><img src="img/starbutton.svg" class="img-fluid"></a> 
+                    </div>
+                    <div class="col-4 d-flex d-none d-md-none d-lg-inline-block d-xl-inline-block"> 
+                        <p class="text-center advent black mt-5 adressdesktop">SALAMANDRE PIZZ <br/>1 RUE DU FOURNEY <br/>39100 <br/>CHOISEY</p>
+                    </div>
+                </div>    
+                
+                   
+                    <div class="advent black text-center" id="intro"><p class="introparagraph">Nous sommes un restaurant rapide situé dans la zone commerciale de Choisey, nous avons une salle intérieure, une terrasse et une aire de jeux pour enfants.<br/>
+                        Nous vous proposons des pizzas, des burgers, des tacos, des paninis et des salades. Nous fabriquons notre pâte à pizza, nos pains burgers et nos pains  kebab. Tous nos desserts sont réalisés par nos soins.</p>
+                    </div>
+                
+                <!-- FACEBOOK LOGO -->
+                <div class="mt-4 d-lg-none d-xl-none d-xxl-none text-center">
+                    <a href="https://www.facebook.com"><img src="img/facebook.png" alt="Logo de Facebook"> </a>
+                </div>
+                <!-- ADRESS AND PHONE NUMBER BUTTON -->
+                <div class=" d-block d-md-block d-lg-none d-xl-none">
+                        <p class="text-center advent black mt-5" id="adress">SALAMANDRE PIZZ <br/>1 RUE DU FOURNEY <br/>39100 <br/>CHOISEY</p>                           
+                        <input type="button" class="allerta black" id="phonenumber"><span class="iconify" data-icon="fluent:call-16-filled" style="color: #1d1d1d;" data-width="50"></span><a href="tel:0384827725">03 84 82 77 25</a></button>
+                </div>
+            </section>
+            <!-- MAP AND SCHEDULE -->
+                <!-- SCHEDULE DESKTOP -->
+            <article id="scheduledesktop" class="d-none d-md-none d-lg-block ps-4">
+                <div>
+                    <div class="d-flex line"><div class="days">LUNDI</div><div class="time"><span style="color:#D97904;">fermé</span></div></div>
+                    <div class="d-flex line"><div class="days">MARDI</div><div class="time">10H00 21H30</div></div>
+                    <div class="d-flex line"><div class="days">MERCREDI</div><div class="time">10H00 21H30</div></div>
+                    <div class="d-flex line"><div class="days">JEUDI</div><div class="time">10H00 21H30</div></div>
+                    <div class="d-flex line"><div class="days">VENDREDI</div><div class="time">10H00 21H30</div></div>
+                    <div class="d-flex line"><div class="days">SAMEDI</div><div class="time">10H00 21H30</div></div>
+                    <div class="d-flex line"><div class="days">DIMANCHE</div><div class="time"><span style="color:#D97904;">18H00</span> 21H30</div></div>
+                    
+                </div>
+            </article>
+            <article class="d-none d-md-none d-lg-block d-xl-block pb-4 ms-4">
+                
+                    <svg width=0 height=0>
+                        <defs>
+                        <clipPath id="decoupage">
+                        <circle cx="250" cy="250" r="250" />
+                        </clipPath>
+                        </defs>
+                    </svg>
+                    <iframe width="80%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" class="mapdesktop" src="https://www.openstreetmap.org/export/embed.html?bbox=5.4527726769447336%2C47.066573943616845%2C5.456313192844391%2C47.068185317044176&amp;layer=mapnik&amp;marker=47.067379636419545%2C5.454542934894562"></iframe>
+                
+                
+            </article>
+            <section>
+                <!-- MAP MOBILE -->
+                <div class="text-center mt-5 d-xs-block d-md-block d-lg-none d-xl-none">
+                    <button class="black advent mb-4" type="button" id="go"><span class="iconify-inline" data-icon="ci:location" style="color: #1d1d1d;"></span>Y ALLER</button>
+                    <iframe width="390" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" class="map" src="https://www.openstreetmap.org/export/embed.html?bbox=5.4527726769447336%2C47.066573943616845%2C5.456313192844391%2C47.068185317044176&amp;layer=mapnik&amp;marker=47.067379636419545%2C5.454542934894562" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=47.06738&amp;mlon=5.45454#map=19/47.06738/5.45454">Afficher la carte plus grande</a></small>
+                </div>
+                <!-- SCHEDULE MOBILE -->
+                <div class="col-12 col-md-12 col-lg-4 col-xl-4 d-xs-block d-md-block d-lg-none d-xl-none">
+                    <h1 class="text-center gotu white p-2" id="scheduletitle">HORAIRES</h1>
+                    <table class="table table-hover gotu" id="schedulemobile">
+                        <tr>
+                            <td>LUNDI</td>
+                            <td id="closed">FERMÉ</td>
+                        </tr>
+                        <tr>
+                            <td>MARDI</td>
+                            <td>10H - 21H30</td>
+                        </tr>
+                        <tr>
+                            <td>MERCREDI</td>
+                            <td>10H - 21H30</td>
+                        </tr>
+                        <tr>
+                            <td>JEUDI</td>
+                            <td>10H - 21H30</td>
+                        </tr>
+                        <tr>
+                            <td>VENDREDI</td>
+                            <td>10H - 21H30</td>
+                        </tr>
+                        <tr>
+                            <td>SAMEDI</td>
+                            <td>10H - 21H30</td>
+                        </tr>
+                        <tr>
+                            <td>DIMANCHE</td>
+                            <td><span class="yellow">18H</span> - 21H30</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <!-- ORDER MENU -->
+            <nav id="ordersection">
+                <!-- STICKY TOP NAVBAR TO SELECT THE TYPE OF MEAL -->
+                
+                    <!-- <h2 class="row menutitle justify-content-center gotu white mb-3">MENU</h2> -->
+                    <form class="d-flex flex-nowrap overflow-auto" id="wrapMenu" role="group">
+                        
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"  checked>
+                        <label class="btn btn-secondary transparent" for="btnradio1">voir tout</label>
+                    
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                        <label class="btn btn-secondary transparent" for="btnradio2">menus</label>
+                    
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                        <label class="btn btn-secondary transparent" for="btnradio3">salades</label>
         
-            <div class="col-12 col-md-4 col-lg-4 col-xl-4 d-flex flex-column justify-content-center">               
-                <img src="img/logo.svg" alt="Logo de La Tour de Pize" class="img-fluid" id="logo">
-                    <div class="subtitledtp text-center d-none d-md-none d-lg-block d-xl-block">SNACK SUR PLACE ET à EMPORTER</div>            
-            </div>
-            <div class="col-2 mt-5 navdesktop black d-none d-md-none d-lg-block d-xl-block">
-                <a href="#go">NOUS TROUVER</a>
-                <div class="row align-items-center numberdtp advent">
-                    03 84 82 77 25
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                        <label class="btn btn-secondary transparent" for="btnradio4">pizzas</label>
+        
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+                        <label class="btn btn-secondary transparent" for="btnradio5">burgers</label>
+        
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off">
+                        <label class="btn btn-secondary transparent" for="btnradio6">americains</label>
+        
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio7" autocomplete="off">
+                        <label class="btn btn-secondary transparent" for="btnradio7">paninis</label>
+        
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio8" autocomplete="off">
+                        <label class="btn btn-secondary transparent" for="btnradio8">wraps & bagants</label>
+        
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio9" autocomplete="off">
+                        <label class="btn btn-secondary transparent" for="btnradio9">petites faims</label>
+        
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio10" autocomplete="off">
+                        <label class="btn btn-secondary transparent" for="btnradio10">desserts maisons</label>
+        
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio11" autocomplete="off">
+                        <label class="btn btn-secondary transparent" for="btnradio11">boissons</label>
+        
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio12" autocomplete="off">
+                        <label class="btn btn-secondary transparent" for="btnradio12">boissons alcoolisées</label>
+        
+                    </form>
+            </nav>
+                    
+                <!-- element de commande -->
+            <section class="menulist"> 
+                 <div class="elmenu" >
+                    <div class="left" onclick="toggleMenu(this);" >
+                        <div class="infosMenu">
+                            <h3>Titre menu</h3>
+                            <p class="txt">Lorem ipsum dolor sit amet.<br>
+                            Sit amet consectetur adipisicing.</p>
+                        </div>
+                        <div class="price">12€</div>
+                    </div>
+                
+                    <div class="right">
+                        <div class="qte">0</div>
+                        <div class="ctrlMenu">
+                            <button class="btn btn-success" onclick=addToBasket(this);>+</button>
+                            <button class="btn btn-danger" onclick=removeFromBasket(this);>-</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>   
-            
-            
-            
-            <div class="row d-flex d-block d-md-block d-lg-none d-xl-none">
-                <div class="col-12 justify-content-center d-flex">
-                    <button type="button" class="btn btn-success me-4 allerta black mobilenav" id="contact"><a href="#contactus">CONTACT</a></button>
-                  <button type="button" class="btn btn-success allerta black mobilenav" id="ordergreen"><a href="#ordersection">COMMANDER</a></button>
+
+                <!-- element de commande -->
+                <div class="elmenu" >
+                    <div class="left" onclick="toggleMenu(this);" >
+                        <div class="infosMenu">
+                            <h3>Titre menu</h3>
+                            <p class="txt">Lorem ipsum dolor sit amet.<br>
+                            Sit amet consectetur adipisicing.</p>
+                        </div>
+                        <div class="price">12€</div>
+                    </div>
+                
+                    <div class="right">
+                        <div class="qte">0</div>
+                        <div class="ctrlMenu">
+                            <button class="btn btn-success" onclick=addToBasket(this);>+</button>
+                            <button class="btn btn-danger" onclick=removeFromBasket(this);>-</button>
+                        </div>
+                    </div>
                 </div>
             </div>     
+            <div class="menulist"> 
+                 <div class="elmenu" >
+                    <div class="left" onclick="toggleMenu(this);" >
+                        <div class="infosMenu">
+                            <h3>Titre menu</h3>
+                            <p class="txt">Lorem ipsum dolor sit amet.<br>
+                            Sit amet consectetur adipisicing.</p>
+                        </div>
+                        <div class="price">12€</div>
+                    </div>
+                
+                    <div class="right">
+                        <div class="qte">0</div>
+                        <div class="ctrlMenu">
+                            <button class="btn btn-success" onclick=addToBasket(this);>+</button>
+                            <button class="btn btn-danger" onclick=removeFromBasket(this);>-</button>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="row pt-3 d-flex d-xs-block d-md-block d-lg-none d-xl-none">
-                <div class="col-12 justify-content-center d-flex">
-                    <button type="button" class="btn btn-success me-4 allerta black mobilenav" id="schedule"><a href="#scheduletitle">HORAIRES</a></button>
+                <!-- element de commande -->
+                <div class="elmenu" >
+                    <div class="left" onclick="toggleMenu(this);" >
+                        <div class="infosMenu">
+                            <h3>Titre menu</h3>
+                            <p class="txt">Lorem ipsum dolor sit amet.<br>
+                            Sit amet consectetur adipisicing.</p>
+                        </div>
+                        <div class="price">12€</div>
+                    </div>
                 
-                
-                    <button type="button" class="btn btn-success allerta black mobilenav" id="findus"><a href="#go">LOCALISER</a></button>
+                    <div class="right">
+                        <div class="qte">0</div>
+                        <div class="ctrlMenu">
+                            <button class="btn btn-success" onclick=addToBasket(this);>+</button>
+                            <button class="btn btn-danger" onclick=removeFromBasket(this);>-</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-<!-- ARROW TO SCROLL TO THE TOP -->
-        <nav>
-            <div class="arrowup">
-                <a href="#logo"><img src="img/arrow.png" alt="Flèche pour remonter à l'accueil" class="img-fluid"></a>
-            </div>
-        </nav>
-          
-    </header>
-    <main>
-        <!-- SECTION OF THE INTRO, FACEBOOK LOGO (mobile only) AND ADRESS -->
-        <section>
-            <!-- DESKTOP -->
-            <div class="row align-items-end">   
-                <div class="orderbtndesktop d-none d-md-none d-lg-inline-block d-xl-inline-block">
-                    <a href="#"><img src="img/starbutton.svg" class="img-fluid"></a> 
-                </div>
-                <div class="col-4 d-flex d-none d-md-none d-lg-inline-block d-xl-inline-block"> 
-                    <p class="text-center advent black mt-5 adressdesktop">SALAMANDRE PIZZ <br/>1 RUE DU FOURNEY <br/>39100 <br/>CHOISEY</p>
-                </div>
-            </div>    
+            </section>     
+                     
             
-                <!-- MOBILE  -->
-                <div class="advent black text-center" id="intro"><p class="introparagraph">Nous sommes un restaurant rapide situé dans la zone commerciale de Choisey, nous avons une salle intérieure, une terrasse et une aire de jeux pour enfants.<br/>
-                    Nous vous proposons des pizzas, des burgers, des tacos, des paninis et des salades. Nous fabriquons notre pâte à pizza, nos pains burgers et nos pains  kebab. Tous nos desserts sont réalisés par nos soins.</p>
-                </div>
-            
-            <!-- FACEBOOK LOGO -->
-            <div class="mt-4 d-lg-none d-xl-none d-xxl-none text-center">
-                <a href="https://www.facebook.com"><img src="img/facebook.png" alt="Logo de Facebook"> </a>
-            </div>
-            <!-- ADRESS AND PHONE NUMBER BUTTON -->
-            <div class="row d-xs-block d-md-block d-lg-none d-xl-none">
-                    <p class="text-center advent black mt-5" id="adress">SALAMANDRE PIZZ <br/>1 RUE DU FOURNEY <br/>39100 <br/>CHOISEY</p>                           
-                    <button type="button" class="allerta black" id="phonenumber"><span class="iconify" data-icon="fluent:call-16-filled" style="color: #1d1d1d;" data-width="50"></span><a href="tel:0384827725">03 84 82 77 25</a></button>
-            </div>
-        </section>
-        <!-- MAP AND SCHEDULE -->
-            <!-- SCHEDULE DESKTOP -->
-        <article id="scheduledesktop" class="d-none d-md-none d-lg-block ms-5">
-            <div>
-                <div class="d-flex line"><div class="days">LUNDI</div><div class="time"><span style="color:#D97904;">fermé</span></div></div>
-                <div class="d-flex line"><div class="days">MARDI</div><div class="time">10H00 21H30</div></div>
-                <div class="d-flex line"><div class="days">MERCREDI</div><div class="time">10H00 21H30</div></div>
-                <div class="d-flex line"><div class="days">JEUDI</div><div class="time">10H00 21H30</div></div>
-                <div class="d-flex line"><div class="days">VENDREDI</div><div class="time">10H00 21H30</div></div>
-                <div class="d-flex line"><div class="days">SAMEDI</div><div class="time">10H00 21H30</div></div>
-                <div class="d-flex line"><div class="days">DIMANCHE</div><div class="time"><span style="color:#D97904;">18H00</span> 21H30</div></div>
-                
-            </div>
-        </article>
-        <article class="d-none d-md-none d-lg-block d-xl-block pb-4 ms-4">
-            
-                <svg width=0 height=0>
-                    <defs>
-                    <clipPath id="decoupage">
-                    <circle cx="250" cy="250" r="250" />
-                    </clipPath>
-                    </defs>
-                </svg>
-                <iframe width="500" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" class="mapdesktop" src="https://www.openstreetmap.org/export/embed.html?bbox=5.4527726769447336%2C47.066573943616845%2C5.456313192844391%2C47.068185317044176&amp;layer=mapnik&amp;marker=47.067379636419545%2C5.454542934894562"></iframe>
-            
-            
-        </article>
-        <section>
-            <!-- MAP MOBILE -->
-            <div class="text-center mt-5 d-xs-block d-md-block d-lg-none d-xl-none">
-                <button class="black advent mb-4" type="button" id="go"><span class="iconify-inline" data-icon="ci:location" style="color: #1d1d1d;"></span>Y ALLER</button>
-                <iframe width="390" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" class="map" src="https://www.openstreetmap.org/export/embed.html?bbox=5.4527726769447336%2C47.066573943616845%2C5.456313192844391%2C47.068185317044176&amp;layer=mapnik&amp;marker=47.067379636419545%2C5.454542934894562" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=47.06738&amp;mlon=5.45454#map=19/47.06738/5.45454">Afficher la carte plus grande</a></small>
-            </div>
-            <!-- SCHEDULE MOBILE -->
-            <div class="col-12 col-md-12 col-lg-4 col-xl-4 d-xs-block d-md-block d-lg-none d-xl-none">
-                <h1 class="text-center gotu white p-2" id="scheduletitle">HORAIRES</h1>
-                <table class="table table-hover gotu" id="schedulemobile">
-                    <tr>
-                        <td>LUNDI</td>
-                        <td id="closed">FERMÉ</td>
-                    </tr>
-                    <tr>
-                        <td>MARDI</td>
-                        <td>10H - 21H30</td>
-                    </tr>
-                    <tr>
-                        <td>MERCREDI</td>
-                        <td>10H - 21H30</td>
-                    </tr>
-                    <tr>
-                        <td>JEUDI</td>
-                        <td>10H - 21H30</td>
-                    </tr>
-                    <tr>
-                        <td>VENDREDI</td>
-                        <td>10H - 21H30</td>
-                    </tr>
-                    <tr>
-                        <td>SAMEDI</td>
-                        <td>10H - 21H30</td>
-                    </tr>
-                    <tr>
-                        <td>DIMANCHE</td>
-                        <td><span class="yellow">18H</span> - 21H30</td>
-                    </tr>
-                </table>
-            </div>
-        </section>
-        <!-- ORDER MENU -->
-        <section id="ordersection">
-            <!-- STICKY TOP NAVBAR TO SELECT THE TYPE OF MEAL -->
-            
-                <h2 class="row menutitle justify-content-center gotu white p-2 mb-3">MENU</h2>
-                <form class="d-flex flex-nowrap overflow-auto" id="wrapMenu" role="group">
-                    
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"  checked>
-                    <label class="btn btn-secondary transparent" for="btnradio1">voir tout</label>
-                  
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                    <label class="btn btn-secondary transparent" for="btnradio2">menus</label>
-                  
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                    <label class="btn btn-secondary transparent" for="btnradio3">salades</label>
-    
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
-                    <label class="btn btn-secondary transparent" for="btnradio4">pizzas</label>
-    
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
-                    <label class="btn btn-secondary transparent" for="btnradio5">burgers</label>
-    
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off">
-                    <label class="btn btn-secondary transparent" for="btnradio6">americains</label>
-    
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio7" autocomplete="off">
-                    <label class="btn btn-secondary transparent" for="btnradio7">paninis</label>
-    
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio8" autocomplete="off">
-                    <label class="btn btn-secondary transparent" for="btnradio8">wraps & bagants</label>
-    
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio9" autocomplete="off">
-                    <label class="btn btn-secondary transparent" for="btnradio9">petites faims</label>
-    
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio10" autocomplete="off">
-                    <label class="btn btn-secondary transparent" for="btnradio10">desserts maisons</label>
-    
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio11" autocomplete="off">
-                    <label class="btn btn-secondary transparent" for="btnradio11">boissons</label>
-    
-                    <input type="radio" class="btn-check" name="btnradio" id="btnradio12" autocomplete="off">
-                    <label class="btn btn-secondary transparent" for="btnradio12">boissons alcoolisées</label>
-    
-                </form>
-                
 
-            <div class="container-fluid">
-                <div class="row text-center">
-                    <h1 class="checkoutitle gotu white pt-2">PANIER</h1>
-                </div>
+
+
+        
+
                
-                <div class="row">
-                   
-                    <div class="col-7 gotu black">
-                        Menu Burger<br/>Burger Classique - Coca-Cola 33cl - <br/>Fondant au Chocolat
-                    </div>
-                    <div class="col-5 text-end" id="price">10.00€
-                        <div>
-                            <button type="button" class="btn btn-success">+</button>
-                            <div class="me-2">1</div>
-                            <button type="button" class="btn btn-danger">--</button> 
-                        </div>
-                    
-                    </div>
-                
-                   
-                    <div class="col-7 gotu black">
-                        Menu Burger<br/>Burger Classique - Coca-Cola 33cl - <br/>Fondant au Chocolat
-                    </div>
-                    <div class="col-5 text-end" id="price">10.00€
-                        <div>
-                            <button type="button" class="btn btn-success">+</button>
-                            <div class="me-2">1</div>
-                            <button type="button" class="btn btn-danger">--</button> 
-                        </div>
-                </div>
-              
-            </div>
-            <div class="text-center">
-                <button type="button" class="btnorder px-3 py-3 gotu black mt-3">Commander</button>
-            </div>     
-        </section>
-        <!-- CONTACT FORM -->
-        <section class="text-center" id="contactus">
-            <h2 class="mb-4" >Nous contacter</h2>
-            <form method="post">
-                
-                    <input type="text" name="name" id="name" placeholder="Votre nom" required   class="d-block m-auto mb-3 field">
-                    <input type="email" name="mail" id="mail" placeholder="Votre adresse mail" required class="d-block m-auto mb-3 field">
-                    <textarea name="content" id="content" placeholder="Votre message..." required rows="10" class="d-block m-auto"></textarea>
-                    <input class="btRed mt-3 mb-5 px-5 py-2 gotu black" type="submit"></input>
-                
-            </form>
-        </section>
-        
-    </main>
+                <div class="text-center">
+                    <button type="button" class="btnorder px-3 py-3 gotu black mt-3">Commander</button>
+                </div>     
+            
+            <!-- CONTACT FORM -->
+            
+        </main>
 
-    <footer class="row d-flex justify-content-center">
-        <div class="col-8 d-flex">
-            Notre page FACEBOOK<br/>
-            Salamandre Pizz 1 rue du Fourney 39100 Choisey<br/>
-            Crédits logo : Alain Merucci and Co. <br/>
-            Crédit photos : Unsplash<br/>
-            An original design by Lucas M-R. <br/>
-            <a href="#">Mentions légales</a>
-        </div>
-    </footer>
-  
-</body>
+                <footer class="container-fluid" id="contactus">
+                    <div class="row">
+                    <h2 class="mb-4" >Nous contacter</h2>
+                    <form method="" class="justify-content-center">
+                        <input type="text" name="name" id="name" placeholder="Votre nom" required   class="d-inline-block mb-3 field">
+                        <input type="email" name="mail" id="mail" placeholder="Votre adresse mail" required class="d-inline-block mb-3 field">
+                        <textarea name="content" id="content" placeholder="Votre message..." required rows="10" class="d-inline-block "></textarea>
+                        <div>
+                            <input class="btRed mt-3 mb-5 px-5 py-2 gotu black" type="submit"></input>
+                        </div>
+                            
+                    </form>  
+                </div>  
+                </footer>
+    </body>
 </html>
