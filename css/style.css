@@ -353,8 +353,19 @@ li {
     }
     .menulist{
         display:flex;
+    } 
+
+    .checkout{
+        display:flex;
+        max-width:300px;
     }
-    
+    h2{
+        display:none;
+    }
+    #wrapMenu{
+        flex-wrap: wrap!important;
+        overflow:initial!important;
+    }
 }
 
 /* MENU DE LAURENT */
@@ -395,3 +406,10 @@ li {
 .active {
     background-color: #F2B70550;
 } 
+
+.checkout{
+    height: 300px;
+    
+    
+    background-color: lawngreen;
+}
